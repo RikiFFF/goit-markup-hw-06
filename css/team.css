@@ -1,0 +1,79 @@
+.main-team {
+  background-color: #f4f4fd;
+}
+.main-team li {
+  background: #fff;
+}
+.main-team h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+.main-team h3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #2e2f42;
+}
+.main-team p {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #434455;
+}
+.list-container {
+  display: flex;
+
+  gap: 24px;
+}
+.main-team h2 {
+  margin-bottom: 72px;
+}
+.list-container-text {
+  padding: 32px 16px;
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+}
+.list-container li {
+  border-radius: 0 0 4px 4px;
+}
+.icons-team {
+  display: flex;
+  gap: 24px;
+  width: 232px;
+  height: 40px;
+}
+.icon-team {
+  color: #f4f4fd;
+}
+.link-icon-team {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #4d5ae5;
+  border-radius: 40px;
+  width: 40px;
+  height: 40px;
+  transition: background-color 250ms ease-in-out;
+}
+.link-icon-team:hover,
+.link-icon-team:focus {
+  background-color: #404bbf;
+}
+.container-shadow {
+  box-shadow:
+    0 2px 1px 0 rgba(46, 47, 66, 0.08),
+    0 1px 1px 0 rgba(46, 47, 66, 0.16),
+    0 1px 6px 0 rgba(46, 47, 66, 0.08);
+}
