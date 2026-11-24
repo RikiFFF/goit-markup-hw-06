@@ -1,12 +1,13 @@
-.main-hero h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 700;
-  font-size: 56px;
-  line-height: 1.07143;
-  letter-spacing: 0.02em;
-  text-align: center;
-  color: #fff;
-  width: 496px;
+/*   Phone     */
+.main-hero .container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 72px;
+}
+.main-hero.section {
+  padding-top: 72px;
+  padding-bottom: 72px;
 }
 .main-hero {
   background: #2e2f42;
@@ -19,21 +20,25 @@
       rgba(46, 47, 66, 0.7) 0%,
       rgba(46, 47, 66, 0.7) 100%
     ),
-    url("../images/hero-bg.jpg");
-  max-width: 1440px;
+    image-set(url("../images/hero-bg.jpg") 1x, url("../images/hero-bg.jpg") 2x);
+  max-width: 320px;
   margin: 0 auto;
 }
-.main-hero .container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  gap: 48px;
-}
-.main-hero.section {
-  padding-top: 188px;
-  padding-bottom: 188px;
+.main-hero h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.11111;
+  letter-spacing: 0.02em;
+  text-align: center;
+  color: #fff;
+  max-width: 216px;
 }
 .main-button {
+  border-radius: 4px;
+  padding: 16px 32px;
+  white-space: nowrap;
+  max-width: 169px;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 16px;
@@ -42,14 +47,74 @@
   color: #fff;
   background: #4d5ae5;
   cursor: pointer;
-  border-radius: 4px;
-  padding: 16px 32px;
   border: none;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   transition: background-color 250ms ease-in-out;
+  font-family: "Roboto", sans-serif;
 }
-
+.main-button {
+  display: flex;
+  flex-direction: row;
+}
 .main-button:hover,
 .main-button:focus {
   background-color: #404bbf;
+}
+/*   Laptop       */
+@media screen and (min-width: 768px) {
+  .main-hero {
+    background: #2e2f42;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7) 0%,
+        rgba(46, 47, 66, 0.7) 100%
+      ),
+      image-set(
+        url("../images/hero-bg.jpg") 1x,
+        url("../images/hero-bg.jpg") 2x
+      );
+    max-width: 768px;
+    margin: 0 auto;
+  }
+  .main-hero .container {
+    gap: 36px;
+  }
+  .main-hero h1 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07143;
+    letter-spacing: 0.02em;
+    text-align: center;
+    color: #fff;
+    max-width: 496px;
+  }
+  /*   Desctop      */
+}
+@media screen and (min-width: 1158px) {
+  .main-hero {
+    background: #2e2f42;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image:
+      linear-gradient(
+        180deg,
+        rgba(46, 47, 66, 0.7) 0%,
+        rgba(46, 47, 66, 0.7) 100%
+      ),
+      image-set(
+        url("../images/hero-bg.jpg") 1x,
+        url("../images/hero-bg.jpg") 2x
+      );
+    max-width: 1440px;
+    margin: 0 auto;
+  }
+  .main-hero .container {
+    gap: 48px;
+  }
 }
