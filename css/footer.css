@@ -1,8 +1,8 @@
 .main-footer .container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 72px;
 }
 .main-footer .container > div:first-child {
@@ -159,58 +159,80 @@
   width: 100%;
 }
 @media screen and (min-width: 768px) {
-  .main-footer .container > div:first-child {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: flex-start;
-    gap: 16px;
-  }
-  .form-email {
-    width: 264px;
-  }
-  .icons-footer {
-    justify-content: flex-start;
-    align-items: flex-start;
-  }
   .main-footer .container {
     flex-direction: row;
     flex-wrap: wrap;
-
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 72px 24px;
   }
 
+  .main-footer .container > div:first-child {
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .icons-footer {
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 208px;
+  }
+
+  .main-footer-icons {
+    justify-content: flex-start;
+    align-items: center;
+    width: auto;
+  }
+
+  .footer-social {
+    text-align: left;
+  }
+
   .footer-form-container {
-    display: flex;
-    flex-direction: column;
     align-items: flex-start;
     width: 453px;
     max-width: 100%;
-    margin: 0;
   }
 
   .footer-form {
-    display: flex;
     flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
     gap: 24px;
   }
-  .footer-social {
-    text-align: left;
+
+  .form-email {
+    width: 264px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1157.98px) {
+  .main-footer .container {
+    width: 100%;
+    max-width: 768px;
+    box-sizing: border-box;
+    padding-left: 108px;
+    padding-right: 108px;
+    margin: 0 auto;
   }
 }
 @media screen and (min-width: 1158px) {
   .main-footer .container > div:first-child {
     margin-right: 120px;
   }
+
   .main-footer .container {
     display: flex;
     flex-direction: row;
-    gap: 0px;
+    justify-content: flex-start;
+    gap: 0;
   }
+
   .icons-footer {
     margin-right: 83px;
   }
+
   .main-footer {
-    padding: 100px 0px;
+    padding: 100px 0;
   }
 }
