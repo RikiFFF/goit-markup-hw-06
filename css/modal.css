@@ -34,9 +34,9 @@
     0 2px 1px 0 rgba(0, 0, 0, 0.2);
   background: #fcfcfc;
   border-radius: 4px;
-  padding: 72px 24px 24px;
-  width: 408px;
-  height: 582px;
+  padding: 72px 16px 24px;
+  width: 288px;
+  height: 619px;
   position: relative;
 }
 .modal-button {
@@ -94,7 +94,7 @@
   padding: 8px 38px;
   width: 360px;
   height: 40px;
-  width: 360px;
+  width: 256px;
   min-height: 40px;
   outline: transparent;
   font-family: "Roboto", sans-serif;
@@ -128,7 +128,7 @@
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   padding: 8px 16px;
-  width: 360px;
+  width: 256px;
   height: 120px;
   resize: none;
   outline: none;
@@ -222,16 +222,15 @@
   border-color: transparent;
   background-color: #404bbf;
 }
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 768px) {
   .modal-form-container {
-    width: 288px;
-    height: 619px;
-    padding: 72px 16px 24px;
+    width: 408px;
+    height: 582px;
+    padding: 72px 24px 24px;
   }
-  .modal-form-input {
-    width: 256px;
-  }
+
+  .modal-form-input,
   .modal-form-comment {
-    width: 256px;
+    width: 360px;
   }
 }

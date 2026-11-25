@@ -1,8 +1,8 @@
 .main-footer .container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-start;
+  align-items: flex-start;
   gap: 72px;
 }
 .main-footer .container > div:first-child {
@@ -15,7 +15,6 @@
 .icons-footer {
   display: flex;
   flex-direction: column;
-  gap: 16px;
 }
 .main-footer-icons {
   display: flex;
@@ -87,8 +86,7 @@
 .footer-form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+
   gap: 16px;
   margin-top: 16px;
   width: 100%;
@@ -120,7 +118,7 @@
   width: 165px;
   height: 40px;
   max-width: 165px;
-
+  margin-left: 61.5px;
   border: none;
 
   font-weight: 500;
@@ -135,9 +133,8 @@
 }
 .form-footer-button {
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  gap: 16px;
 }
 .form-footer-button:hover,
 .form-footer-button:focus {

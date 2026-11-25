@@ -30,6 +30,7 @@
   visibility: hidden;
   opacity: 0;
   transition: opacity 250ms ease-in-out;
+  pointer-events: none;
 }
 .modal-mobile.is-open {
   opacity: 1;
