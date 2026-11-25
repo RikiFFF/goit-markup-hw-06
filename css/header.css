@@ -126,6 +126,7 @@
   }
   .adress-list {
     display: flex;
+    flex-direction: row;
     gap: 40px;
   }
   .main-address li > a {

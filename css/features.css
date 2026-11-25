@@ -51,6 +51,10 @@
     align-items: center;
     justify-content: center;
   }
+  .main-list-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .main-list-container > li {
     width: calc((100% - 72px) / 4);
   }
