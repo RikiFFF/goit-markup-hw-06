@@ -27,7 +27,7 @@
 .portfolio-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 72px 0px;
+  gap: 48px 0px;
 }
 
 .portfolio-list-text {
@@ -78,7 +78,7 @@
 }
 @media screen and (min-width: 1158px) {
   .portfolio-list {
-    gap: 72px 24px;
+    gap: 48px 24px;
   }
   .portfolio-list > li {
     width: calc((100% - 48px) / 3);

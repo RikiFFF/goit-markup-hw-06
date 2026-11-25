@@ -22,10 +22,10 @@
   text-transform: uppercase;
   color: #2e2f42;
   align-self: center;
+  padding: 16px 0px;
 }
 .header .container {
   display: flex;
-  padding: 16px 0px;
 }
 @media screen and (min-width: 768px) {
   .header .container {
@@ -39,6 +39,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 16px 0px;
   }
   .main-address li > a {
     font-family: "Roboto", sans-serif;
@@ -129,9 +130,5 @@
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #434455;
-  }
-  .main-nav-tablet {
-    margin-left: 76px;
-    margin-right: 340px;
   }
 }
