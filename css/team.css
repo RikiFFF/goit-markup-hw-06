@@ -90,6 +90,7 @@
   .list-container {
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 64px 24px;
   }
   .container-shadow {
@@ -99,4 +100,7 @@
 }
 /*   Desctop      */
 @media screen and (min-width: 1158px) {
+  .list-container {
+    justify-content: center;
+  }
 }

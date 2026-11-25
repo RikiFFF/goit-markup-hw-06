@@ -2,7 +2,12 @@
   .main-address {
     display: none;
   }
+
+  .modal-mobile .main-address {
+    display: flex;
+  }
 }
+
 .burger-button {
   border: none;
   background-color: transparent;
@@ -90,10 +95,10 @@
   letter-spacing: 0.02em;
   color: #434455;
   font-style: normal;
-  align-self: center;
 }
 .mobile-address-list {
   display: flex;
+  flex-direction: column;
   gap: 24px 0px;
 }
 .mobile-address-list > li:first-child > a {
